@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hirianodevs.online/sitemap.xml
+Sitemap: https://hirianolabs.online/sitemap.xml
