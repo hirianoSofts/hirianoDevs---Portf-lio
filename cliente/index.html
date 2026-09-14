@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fale Connosco — HirianoLabs</title>
+  <meta name="description" content="Fale com a HirianoLabs sobre websites, aplicações, plataformas, UX/UI, e-commerce, inteligência artificial e soluções digitais.">
+  <meta name="theme-color" content="#062a21">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="intro" id="intro">
+  <div class="intro-glow"></div>
+  <div class="intro-content">
+    <div class="intro-logo"><img src="../assets/logo.png" alt="HirianoLabs"></div>
+    <div class="intro-name">Hiriano<span>Labs</span></div>
+    <div class="intro-loader"><span></span></div>
+    <small>PREPARANDO CONTACTO</small>
+  </div>
+</div>
+
+<header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#inicio" aria-label="HirianoDevs início">
+        <img src="../assets/logo-hirianodevs.png" alt="HirianoLabs">
+        <span>Hiriano<span>Labs</span></span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio" class="active">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <a href="#contacto" class="nav-cta">Solicitar assistência <i class="ri-arrow-right-up-line"></i></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
+        <i class="ri-menu-4-line"></i>
+      </button>
+    </nav>
+  </header>
+
+<main id="contacto">
+<section class="contact-hero">
+  <div class="hero-bg"></div>
+  <div class="container contact-grid">
+
+    <div class="contact-copy">
+      <span class="kicker">Fale connosco</span>
+      <h1>Vamos transformar a sua ideia em <em>produto.</em></h1>
+      <p>Conte-nos o que pretende construir. A nossa equipa irá analisar o seu projecto e entrar em contacto consigo.</p>
+
+      <div class="contact-info">
+        <a href="mailto:suport@hirianolabs.online">
+          <span class="info-icon"><i class="ri-mail-send-line"></i></span>
+          <div><small>Email</small><strong>suport@hirianolabs.online</strong></div>
+          <i class="ri-arrow-right-up-line arrow"></i>
+        </a>
+        <a href="tel:+258859308902">
+          <span class="info-icon"><i class="ri-phone-line"></i></span>
+          <div><small>Telefone</small><strong>+258 859 308 902</strong></div>
+          <i class="ri-arrow-right-up-line arrow"></i>
+        </a>
+        <a href="https://wa.me/258859308902" target="_blank" rel="noopener">
+          <span class="info-icon whatsapp"><i class="ri-whatsapp-line"></i></span>
+          <div><small>WhatsApp</small><strong>Falar pelo WhatsApp</strong></div>
+          <i class="ri-arrow-right-up-line arrow"></i>
+        </a>
+      </div>
+
+      <div class="availability">
+        <span class="status-dot"></span>
+        <div><strong>Estamos disponíveis</strong><small>Respondemos normalmente em até 24 horas.</small></div>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <div class="form-top">
+        <div>
+          <span class="form-number">01 / CONTACTO</span>
+          <h2>Conte-nos sobre o seu projecto.</h2>
+        </div>
+        <div class="form-icon"><i class="ri-sparkling-2-line"></i></div>
+      </div>
+
+      <form id="contactForm" action="https://formsubmit.co/suport@hirianolabs.online" method="POST">
+        <input type="hidden" name="_subject" value="Novo pedido de contacto — HirianoLabs">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://hirianolabs.online/contacto/">
+
+        <div class="form-row">
+          <div class="field">
+            <label for="nome">Nome</label>
+            <div class="input"><i class="ri-user-3-line"></i><input id="nome" name="nome" type="text" placeholder="O seu nome" autocomplete="name" required></div>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <div class="input"><i class="ri-mail-line"></i><input id="email" name="email" type="email" placeholder="seu@email.com" autocomplete="email" required></div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="telefone">Telefone</label>
+            <div class="input"><i class="ri-phone-line"></i><input id="telefone" name="telefone" type="tel" placeholder="+258 84..." autocomplete="tel"></div>
+          </div>
+          <div class="field">
+            <label for="servico">Serviço</label>
+            <div class="input select">
+              <i class="ri-layout-grid-line"></i>
+              <select id="servico" name="servico" required>
+                <option value="">Escolha um serviço</option>
+                <option>Website</option>
+                <option>Aplicação Mobile</option>
+                <option>Plataforma Web</option>
+                <option>E-commerce</option>
+                <option>UX/UI Design</option>
+                <option>Inteligência Artificial</option>
+                <option>Automação</option>
+                <option>Outro</option>
+              </select>
+              <i class="ri-arrow-down-s-line select-arrow"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Orçamento aproximado</label>
+          <div class="budget-options">
+            <label><input type="radio" name="orcamento" value="Até 10.000 MT"><span>Até 10.000 MT</span></label>
+            <label><input type="radio" name="orcamento" value="10.000 - 30.000 MT"><span>10k – 30k MT</span></label>
+            <label><input type="radio" name="orcamento" value="30.000 - 60.000 MT"><span>30k – 60k MT</span></label>
+            <label><input type="radio" name="orcamento" value="Mais de 60.000 MT"><span>60k+ MT</span></label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="mensagem">Fale-nos sobre o projecto</label>
+          <div class="textarea">
+            <i class="ri-chat-1-line"></i>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Explique brevemente a sua ideia, objectivos e o que gostaria de criar..." required></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="submit" id="submitBtn">
+          <span>Enviar pedido</span><i class="ri-arrow-right-up-line"></i>
+        </button>
+        <p class="privacy"><i class="ri-shield-check-line"></i> As suas informações serão utilizadas apenas para responder ao seu pedido.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="bottom-cta">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <span class="kicker">Não sabe por onde começar?</span>
+        <h2>Nós ajudamos a <em>encontrar o caminho.</em></h2>
+      </div>
+      <a href="https://wa.me/258859308902" target="_blank" rel="noopener" class="whatsapp-btn">
+        <i class="ri-whatsapp-line"></i> Falar no WhatsApp <i class="ri-arrow-right-up-line"></i>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer">
+    <a href="../index.html" class="brand"><img src="../assets/logo.png" alt="HirianoLabs"><span>Hiriano<span>Labs</span></span></a>
+    <span>© 2026 HirianoLabs</span>
+    <span>Maputo · Moçambique</span>
+  </div>
+</footer>
+
+<div class="success" id="success">
+  <div class="success-box">
+    <div class="success-icon"><i class="ri-check-line"></i></div>
+    <h3>Pedido enviado!</h3>
+    <p>Obrigado pelo contacto. Recebemos o seu pedido e entraremos em contacto consigo.</p>
+    <button id="successClose">Continuar</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="../script.js"></script>
+</body>
+</html>
