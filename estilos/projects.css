@@ -144,3 +144,816 @@
   }
 
 }
+
+/* =========================================================
+   HIRIANOLABS — MODERN UI/UX PROJECT ART
+   ========================================================= */
+
+.ui-project{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+}
+
+/* brilho geral */
+
+.ui-project::before{
+  content:"";
+  position:absolute;
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  filter:blur(70px);
+  opacity:.55;
+  z-index:-1;
+}
+
+.ui-vilataxi{
+  background:
+    linear-gradient(145deg,#e8f2df,#d4e7c7);
+}
+
+.ui-vilataxi::before{
+  background:#d4ef43;
+  right:-100px;
+  top:-100px;
+}
+
+.ui-govila{
+  background:
+    radial-gradient(circle at 80% 20%,#d4ef43 0,transparent 25%),
+    linear-gradient(145deg,#eef3e8,#dce8d6);
+}
+
+.ui-govila::before{
+  background:#a7ca67;
+  left:-120px;
+  bottom:-120px;
+}
+
+.ui-trabalho{
+  background:
+    radial-gradient(circle at 80% 20%,#315e4d 0,transparent 35%),
+    #092d24;
+}
+
+.ui-trabalho::before{
+  background:#d4ef43;
+  right:-130px;
+  bottom:-150px;
+}
+
+
+/* =========================================================
+   VILATÁXI
+   ========================================================= */
+
+.ui-topbar{
+  position:absolute;
+  top:22px;
+  left:25px;
+  right:25px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:11px;
+  font-weight:800;
+  color:var(--green);
+  z-index:5;
+}
+
+.ui-brand-dot{
+  width:25px;
+  height:25px;
+  border-radius:8px;
+  background:var(--green);
+  position:relative;
+}
+
+.ui-brand-dot::after{
+  content:"";
+  position:absolute;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--lime);
+  top:8px;
+  left:8px;
+}
+
+.ui-top-actions{
+  margin-left:auto;
+  display:flex;
+  gap:5px;
+}
+
+.ui-top-actions span{
+  width:5px;
+  height:5px;
+  background:#789080;
+  border-radius:50%;
+}
+
+.taxi-map{
+  position:absolute;
+  inset:70px 25px 25px;
+  border-radius:24px;
+  background:
+    linear-gradient(25deg,transparent 48%,#ffffffaa 49%,#ffffffaa 52%,transparent 53%),
+    linear-gradient(-35deg,transparent 46%,#ffffffaa 47%,#ffffffaa 51%,transparent 52%),
+    #cfe2c5;
+  overflow:hidden;
+}
+
+.map-road{
+  position:absolute;
+  background:#f5f7f0;
+  border-radius:100px;
+}
+
+.road-1{
+  width:150%;
+  height:55px;
+  transform:rotate(27deg);
+  left:-100px;
+  top:80px;
+}
+
+.road-2{
+  width:130%;
+  height:35px;
+  transform:rotate(-42deg);
+  left:-50px;
+  top:190px;
+}
+
+.road-3{
+  width:120%;
+  height:30px;
+  transform:rotate(15deg);
+  left:-20px;
+  bottom:80px;
+}
+
+.map-pin{
+  position:absolute;
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:var(--green);
+  color:var(--lime);
+  box-shadow:0 10px 25px #062a2130;
+  z-index:3;
+}
+
+.pin-one{
+  left:27%;
+  top:30%;
+}
+
+.pin-two{
+  right:24%;
+  top:48%;
+}
+
+.taxi-route{
+  position:absolute;
+  width:150px;
+  height:95px;
+  border:3px dashed var(--green);
+  border-left:0;
+  border-bottom:0;
+  border-radius:0 70px 0 0;
+  left:30%;
+  top:35%;
+  transform:rotate(15deg);
+}
+
+.taxi-card{
+  position:absolute;
+  width:230px;
+  right:20px;
+  bottom:20px;
+  padding:16px;
+  background:#fff;
+  border-radius:18px;
+  box-shadow:0 20px 45px #062a2125;
+}
+
+.taxi-driver{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.driver-avatar{
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:var(--green);
+  color:var(--lime);
+  font-size:11px;
+  font-weight:800;
+}
+
+.taxi-driver strong,
+.taxi-driver small{
+  display:block;
+}
+
+.taxi-driver strong{
+  font-size:10px;
+}
+
+.taxi-driver small{
+  font-size:7px;
+  color:#89948f;
+  margin-top:2px;
+}
+
+.online-dot{
+  margin-left:auto;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#9fc72e;
+}
+
+.taxi-info{
+  display:flex;
+  justify-content:space-between;
+  margin:14px 0;
+  font-size:9px;
+}
+
+.taxi-info span{
+  color:#8a968f;
+}
+
+.taxi-info strong{
+  color:var(--green);
+}
+
+.taxi-card button{
+  width:100%;
+  border:0;
+  padding:10px;
+  border-radius:10px;
+  background:var(--green);
+  color:#fff;
+  font-size:8px;
+  font-weight:700;
+}
+
+.ui-floating{
+  position:absolute;
+  z-index:8;
+  background:#fff;
+  border-radius:15px;
+  padding:12px 14px;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  box-shadow:0 20px 45px #062a2125;
+}
+
+.ui-floating>i{
+  width:32px;
+  height:32px;
+  border-radius:10px;
+  display:grid;
+  place-items:center;
+  background:#edf4df;
+  color:var(--green);
+}
+
+.ui-floating strong,
+.ui-floating small{
+  display:block;
+}
+
+.ui-floating strong{
+  font-size:11px;
+}
+
+.ui-floating small{
+  font-size:7px;
+  color:#8a9690;
+}
+
+.taxi-stat{
+  left:25px;
+  bottom:35px;
+}
+
+
+/* =========================================================
+   GOVILA
+   ========================================================= */
+
+.govila-header{
+  position:absolute;
+  top:24px;
+  left:25px;
+  right:25px;
+  display:flex;
+  align-items:center;
+}
+
+.govila-logo{
+  width:31px;
+  height:31px;
+  border-radius:9px;
+  background:var(--green);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:2px;
+}
+
+.govila-logo span{
+  width:5px;
+  height:13px;
+  background:var(--lime);
+  border-radius:3px;
+}
+
+.govila-logo span:last-child{
+  height:8px;
+}
+
+.govila-nav{
+  margin-left:auto;
+  display:flex;
+  gap:5px;
+}
+
+.govila-nav span{
+  width:25px;
+  height:5px;
+  border-radius:10px;
+  background:#a8b8a4;
+}
+
+.govila-content{
+  position:absolute;
+  inset:80px 25px 25px;
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:18px;
+  align-items:center;
+}
+
+.govila-copy small{
+  font-size:7px;
+  letter-spacing:1.5px;
+  font-weight:800;
+  color:#718076;
+}
+
+.govila-copy h3{
+  margin-top:10px;
+  font-size:31px;
+  line-height:1;
+  letter-spacing:-2px;
+  color:var(--green);
+}
+
+.govila-copy h3 strong{
+  display:block;
+  color:#769520;
+}
+
+.govila-search{
+  margin-top:18px;
+  display:flex;
+  align-items:center;
+  gap:7px;
+  background:#fff;
+  padding:11px;
+  border-radius:10px;
+  box-shadow:0 10px 25px #062a2110;
+  color:#8a968f;
+  font-size:7px;
+}
+
+.govila-dashboard{
+  position:relative;
+  height:230px;
+}
+
+.dashboard-card{
+  position:absolute;
+  background:#fff;
+  border-radius:18px;
+  box-shadow:0 20px 45px #062a2115;
+}
+
+.main-card{
+  inset:0 15px 0 0;
+  padding:17px;
+}
+
+.dash-header{
+  display:flex;
+  justify-content:space-between;
+  font-size:9px;
+  color:var(--green);
+  font-weight:700;
+}
+
+.dash-chart{
+  height:85px;
+  margin-top:25px;
+  display:flex;
+  align-items:end;
+  gap:7px;
+}
+
+.dash-chart span{
+  flex:1;
+  border-radius:5px 5px 2px 2px;
+  background:var(--green);
+  opacity:.8;
+}
+
+.dash-chart span:nth-child(5){
+  background:var(--lime);
+}
+
+.main-card>small{
+  display:block;
+  margin-top:15px;
+  font-size:7px;
+  color:#8c9691;
+}
+
+.main-card>strong{
+  font-size:20px;
+  color:var(--green);
+}
+
+.mini-card{
+  width:105px;
+  right:-5px;
+  bottom:15px;
+  padding:12px;
+  transform:rotate(5deg);
+}
+
+.mini-card i{
+  color:var(--green);
+  font-size:18px;
+}
+
+.mini-card strong{
+  display:block;
+  font-size:14px;
+  margin-top:5px;
+  color:var(--green);
+}
+
+.mini-card small{
+  font-size:7px;
+  color:#89948f;
+}
+
+
+/* =========================================================
+   TRABALHO
+   ========================================================= */
+
+.work-window{
+  position:absolute;
+  inset:35px 28px;
+  background:#f4f6f1;
+  border-radius:20px;
+  overflow:hidden;
+  display:flex;
+  box-shadow:0 30px 70px #0004;
+}
+
+.work-sidebar{
+  width:52px;
+  background:#0c352a;
+  padding:16px 9px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:13px;
+}
+
+.work-logo{
+  width:25px;
+  height:25px;
+  border-radius:8px;
+  background:var(--lime);
+  margin-bottom:15px;
+  position:relative;
+}
+
+.work-logo span{
+  position:absolute;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--green);
+  top:8px;
+  left:8px;
+}
+
+.side-item{
+  width:30px;
+  height:30px;
+  border-radius:9px;
+  display:grid;
+  place-items:center;
+  color:#86a097;
+  font-size:13px;
+}
+
+.side-item.active{
+  background:#ffffff18;
+  color:var(--lime);
+}
+
+.work-main{
+  flex:1;
+  padding:22px;
+}
+
+.work-nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.work-nav small,
+.work-nav strong{
+  display:block;
+}
+
+.work-nav small{
+  font-size:7px;
+  color:#89958f;
+}
+
+.work-nav strong{
+  margin-top:3px;
+  font-size:13px;
+  color:var(--green);
+}
+
+.work-avatar{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background:var(--green);
+  color:var(--lime);
+  display:grid;
+  place-items:center;
+  font-size:8px;
+  font-weight:800;
+}
+
+.work-search{
+  margin-top:18px;
+  background:#fff;
+  border:1px solid #e1e7df;
+  padding:10px 12px;
+  border-radius:10px;
+  display:flex;
+  gap:7px;
+  align-items:center;
+  color:#929d97;
+  font-size:7px;
+}
+
+.job-grid{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:10px;
+  margin-top:13px;
+}
+
+.job-card{
+  position:relative;
+  padding:13px;
+  min-height:145px;
+  border-radius:13px;
+  background:#fff;
+  border:1px solid #e5e9e3;
+}
+
+.featured-job{
+  background:var(--green);
+  color:#fff;
+}
+
+.job-tag{
+  font-size:6px;
+  letter-spacing:1px;
+  color:var(--lime);
+}
+
+.job-icon{
+  width:30px;
+  height:30px;
+  margin:15px 0 10px;
+  border-radius:9px;
+  background:#eaf1e4;
+  color:var(--green);
+  display:grid;
+  place-items:center;
+}
+
+.featured-job .job-icon{
+  background:#ffffff18;
+  color:var(--lime);
+}
+
+.job-card>strong,
+.job-card>small{
+  display:block;
+}
+
+.job-card>strong{
+  font-size:9px;
+}
+
+.job-card>small{
+  margin-top:4px;
+  font-size:6px;
+  color:#8b9690;
+}
+
+.featured-job>small{
+  color:#a9bbb4;
+}
+
+.job-bottom{
+  position:absolute;
+  bottom:12px;
+  left:13px;
+  display:flex;
+  gap:5px;
+  font-size:6px;
+  color:#8a9690;
+}
+
+.featured-job .job-bottom{
+  color:#a9bbb4;
+}
+
+.work-stat{
+  right:18px;
+  bottom:25px;
+}
+
+
+/* =========================================================
+   PROJECT OVERLAY
+   ========================================================= */
+
+.ui-project .project-overlay{
+  position:absolute;
+  inset:0;
+  padding:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  pointer-events:none;
+}
+
+.ui-project .art-label{
+  background:#ffffffaa;
+  backdrop-filter:blur(10px);
+  padding:7px 10px;
+  border-radius:100px;
+  color:var(--green);
+}
+
+.ui-project .project-number{
+  width:31px;
+  height:31px;
+  border-radius:50%;
+  background:#ffffffaa;
+  backdrop-filter:blur(10px);
+  display:grid;
+  place-items:center;
+  color:var(--green);
+  font-size:8px;
+  font-weight:800;
+}
+
+.ui-trabalho .project-overlay .art-label,
+.ui-trabalho .project-overlay .project-number{
+  background:#ffffff15;
+  color:#fff;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.project:hover .ui-project{
+  transform:translateY(-3px);
+}
+
+.project:hover .ui-floating{
+  transform:translateY(-4px);
+}
+
+.ui-project,
+.ui-floating{
+  transition:transform .5s cubic-bezier(.2,.8,.2,1);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media(max-width:700px){
+
+  .ui-project{
+    min-height:390px;
+  }
+
+  .ui-topbar{
+    top:18px;
+    left:18px;
+    right:18px;
+  }
+
+  .taxi-map{
+    inset:65px 15px 15px;
+  }
+
+  .taxi-card{
+    width:calc(100% - 30px);
+    right:15px;
+    bottom:15px;
+  }
+
+  .taxi-stat{
+    left:15px;
+    bottom:25px;
+    transform:scale(.85);
+    transform-origin:left bottom;
+  }
+
+  .govila-content{
+    inset:70px 18px 18px;
+    grid-template-columns:1fr;
+  }
+
+  .govila-copy h3{
+    font-size:25px;
+  }
+
+  .govila-dashboard{
+    height:180px;
+  }
+
+  .work-window{
+    inset:25px 15px;
+  }
+
+  .work-sidebar{
+    width:43px;
+  }
+
+  .work-main{
+    padding:15px;
+  }
+
+  .work-nav strong{
+    font-size:10px;
+  }
+
+  .job-grid{
+    grid-template-columns:1fr;
+  }
+
+  .job-card{
+    min-height:110px;
+  }
+
+  .job-card:nth-child(2){
+    display:none;
+  }
+
+  .work-stat{
+    right:10px;
+    bottom:18px;
+    transform:scale(.82);
+    transform-origin:right bottom;
+  }
+
+   }
